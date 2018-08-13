@@ -1,0 +1,49 @@
+USE MEUBANCO;
+
+CREATE TABLE info (id INT PRIMARY KEY AUTO_INCREMENT,
+ login VARCHAR(30) NOT NULL UNIQUE,
+senha VARCHAR(30) NOT NULL UNIQUE,
+nome VARCHAR(200) NOT NULL UNIQUE,
+email VARCHAR(100) UNIQUE NOT NULL,
+cpf CHAR(11) NOT NULL UNIQUE,
+rg CHAR(8) NOT NULL UNIQUE, 
+idade INT(3),
+nomePai VARCHAR(200),
+nomeMao VARCHAR(200),
+aniversário VARCHAR(10));
+
+
+INSERT INTO info (login,senha,nome,email,cpf,rg,idade,nomePai,nomeMao,aniversário) VALUES ('eduardo',
+1234,
+'Eduardo José Ferreira de Souza',
+'animedudu@hotmail.com',
+12345678901,
+12345678,20,
+'Valmir Ferreira de Souza',
+'Cristiane Ferreira de Souza',
+'23/08/97');
+
+
+INSERT INTO info (login,senha,nome,email,cpf,rg,idade,nomePai,nomeMao,aniversário) VALUES ('renton',
+'leãozinho',
+'Asdrubal Ferreira do Rego',
+'asianph@hotmail.com',
+12345678912,
+11111111,
+15,
+'Meu pai',
+'Minha mãe',
+'01/01/2013');
+
+INSERT INTO info (login,senha,nome,email,cpf,rg,idade,nomePai,nomeMao,aniversário) VALUES ('matheius01',
+'matheusarraza',
+'Matheus',
+'matheus01@hotmail.com',
+11111111111,
+22222222,
+15,
+'Matheus II',
+'Mariazinha',
+'06/06/2006');
+
+
